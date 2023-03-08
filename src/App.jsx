@@ -1,11 +1,14 @@
 import React from 'react';
 import './App.css';
+import Allmovies from './components/Allmovies';
+import Header from './components/Header';
 
 const App = () => {
     return(
-        <>
-        <h1>Hello ReactJS</h1>
-        </>
+        <div className='App'>
+            <Header/>
+            <Allmovies/>
+        </div>
     )
 }
 
