@@ -1,0 +1,34 @@
+.keeper{
+    display: flex;
+    color: black;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+h1{
+    margin: 0;
+}
+
+.form{
+    margin-top: 20px;
+}
+
+.records{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.record{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    padding: 10px;
+    border-radius: 20px;
+    border: 2px solid rgb(240, 250, 255);
+    background-color: rgb(220, 250, 255);
+}
+
+/* #EE5A24 */

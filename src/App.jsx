@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './components/Home';
 import UseStateDemo from './components/UseStateDemo';
 import Error from './components/Error';
+import RecordKeeper from './components/RecordKeeper';
 
 
 const App = () => {
@@ -17,6 +18,7 @@ const App = () => {
                     <Route exact path='/' element={<Home/>} />
                     <Route path='/movies' element={<Allmovies/>} />
                     <Route path='/usestatedemo' element={<UseStateDemo/>} />
+                    <Route path='/recordkeeper' element={<RecordKeeper/>} />
                     <Route path='*' element={<Error/>} />
                 </Routes>
             </Router>
