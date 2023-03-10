@@ -43,6 +43,11 @@ const RecordKeeper = () => {
                 </Stack>
             </div>
             <div className="records">
+                <div className="record">
+                    <h4>Name</h4>
+                    <h4>Email</h4>
+                    <h4>Remove</h4>
+                </div>
                 {
                     data.map((e, index) => {
                         return (

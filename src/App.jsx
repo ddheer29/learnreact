@@ -7,6 +7,7 @@ import Home from './components/Home';
 import UseStateDemo from './components/UseStateDemo';
 import Error from './components/Error';
 import RecordKeeper from './components/RecordKeeper';
+import UseEffect from './components/UseEffect';
 
 
 const App = () => {
@@ -19,6 +20,7 @@ const App = () => {
                     <Route path='/movies' element={<Allmovies/>} />
                     <Route path='/usestatedemo' element={<UseStateDemo/>} />
                     <Route path='/recordkeeper' element={<RecordKeeper/>} />
+                    <Route path='/useeffect' element={<UseEffect/>} />
                     <Route path='*' element={<Error/>} />
                 </Routes>
             </Router>
