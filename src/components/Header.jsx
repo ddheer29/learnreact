@@ -1,15 +1,24 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 const Header = () => {
+  const navLinkStyles = ({isActive}) => {
+    return {
+      textDecoration: isActive ? "none" : "underline",
+      color: isActive ? "white" : "grey",
+      fontSize: isActive ? "15px" : "10px"
+    }
+  }
   return (
     <div className="header">
         <h1>Movie Reviews</h1>
-        <Link to={'/'} style={{textDecoration: "none", color: "white"}}><h1>Home</h1></Link>
-        <Link to={'/movies'} style={{textDecoration: "none", color: "white"}}><h1>All Movies</h1></Link>
-        <Link to={'/usestatedemo'} style={{textDecoration: "none", color: "white"}}><h1>UseStateDemo</h1></Link>
-        <Link to={'/recordkeeper'} style={{textDecoration: "none", color: "white"}} ><h1>Record Keeper</h1></Link>
-        <Link to={'/useeffect'} style={{textDecoration: "none", color: "white"}} ><h1>UseEffect</h1></Link>
+        <NavLink to={'/home'} style={navLinkStyles}><h1>Home</h1></NavLink>
+        <NavLink to={'/movies'} style={navLinkStyles}><h1>All Movies</h1></NavLink>
+        <NavLink to={'/usestatedemo'} style={navLinkStyles}><h1>UseStateDemo</h1></NavLink>
+        <NavLink to={'/recordkeeper'} style={navLinkStyles} ><h1>Record Keeper</h1></NavLink>
+        <NavLink to={'/useeffect'} style={navLinkStyles} ><h1>UseEffect</h1></NavLink>
+        <NavLink to={'/nestedrouting'} style={navLinkStyles} ><h1>NestedRouting</h1></NavLink>
+        <NavLink to={'/contextapi'} style={navLinkStyles} ><h1>ContextAPI</h1></NavLink>
     </div>
   )
 }
