@@ -19,6 +19,7 @@ const Header = () => {
         <NavLink to={'/useeffect'} style={navLinkStyles} ><h1>UseEffect</h1></NavLink>
         <NavLink to={'/nestedrouting'} style={navLinkStyles} ><h1>NestedRouting</h1></NavLink>
         <NavLink to={'/contextapi'} style={navLinkStyles} ><h1>ContextAPI</h1></NavLink>
+        <NavLink to={'/customhook'} style={navLinkStyles} ><h1>CustomHook</h1></NavLink>
     </div>
   )
 }

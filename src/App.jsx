@@ -15,6 +15,7 @@ import ContextAPI from './ContextAPI';
 import ComponentA from './contexapi/ComponentA';
 import ComponentB from './contexapi/ComponentB';
 import ComponentC from './contexapi/ComponentC';
+import CustomHook from './components/CustomHook';
 
 
 const App = () => {
@@ -42,6 +43,7 @@ const App = () => {
                         <Route path='componentb' element={<ComponentB/>} />
                         <Route path='componentc' element={<ComponentC/>} />
                     </Route>
+                    <Route path='/customhook' element={<CustomHook/>}/>
                     <Route path='*' element={<Error/>} />
                 </Routes>
             </Router>
